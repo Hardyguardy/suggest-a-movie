@@ -6,6 +6,7 @@ import Movie from "./Components/Movie";
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [selectedGenre, setSelectedGenre] = useState("All");
+  const [selectedYear, setSelectedYear] = useState(2000);
   const [genres, setGenres] = useState([]);
 
   useEffect(() => {
@@ -14,10 +15,13 @@ function App() {
   });
 
   const pickRandomMovie = () => {
-    const filteredMovies =
-      selectedGenre === "All"
-        ? movies
-        : movies.filter((movie) => movie.genres.includes(selectedGenre));
+    const filteredMovies = movies.filter((movie) => {
+      return (
+        (selectedGenre === "All" || movie.genres.includes(selectedGenre)) &&
+        movie.year >= selectedYear &&
+        movie.year < selectedYear + 10
+      );
+    });
     const random = Math.floor(Math.random() * filteredMovies.length);
     setSelectedMovie(filteredMovies[random]);
   };
@@ -40,6 +44,17 @@ function App() {
               </option>
             ))}
           </select>
+          <input
+            type="range"
+            min="1980"
+            max="2020"
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(parseInt(e.target.value))}
+            className="slider mb-4"
+          />
+          <p>
+            Year: {selectedYear} - {selectedYear + 9}
+          </p>
         </div>
 
         <div className="pb-[30px]">
