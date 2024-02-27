@@ -20,7 +20,7 @@ function App() {
         (selectedGenre === "All" || movie.genres.includes(selectedGenre)) &&
         movie.year >= selectedYear &&
         movie.year < selectedYear + 10
-      );
+      ); // Adjust this logic as needed
     });
     const random = Math.floor(Math.random() * filteredMovies.length);
     setSelectedMovie(filteredMovies[random]);
