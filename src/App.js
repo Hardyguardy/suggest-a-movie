@@ -30,7 +30,7 @@ function App() {
     <div className="App flex justify-center items-center min-h-screen bg-gray-100">
       <div className="text-center">
         <h1 class="text-3xl font-bold text-center p-[20px]">
-          Pick a random movie
+          Pick a random movie based <br /> on Hardy Guardy's taste!
         </h1>
         <div className="mb-4">
           <select
@@ -59,7 +59,7 @@ function App() {
 
         <div className="pb-[30px]">
           <button
-            className="bg-blue-500 h-[50px] w-[150px] hover:bg-blue-700 text-white rounded-[12px]  "
+            className="bg-green-500 h-[50px] w-[150px] hover:bg-blue-700 text-white rounded-[12px]  "
             onClick={pickRandomMovie}
           >
             Pick a movie
