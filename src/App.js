@@ -32,6 +32,7 @@ function App() {
         <h1 class="text-3xl font-bold text-center p-[20px]">
           Pick a random movie based <br /> on Hardy Guardy's taste!
         </h1>
+        <p class="text-lg mb-[20px]">Select a genre and year to get started</p>
         <div className="mb-4">
           <select
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -59,7 +60,7 @@ function App() {
 
         <div className="pb-[30px]">
           <button
-            className="bg-green-500 h-[50px] w-[150px] hover:bg-blue-700 text-white rounded-[12px]  "
+            className="bg-green-500 h-[50px] w-[150px] hover:bg-green-600 text-white rounded-[12px]  "
             onClick={pickRandomMovie}
           >
             Pick a movie
