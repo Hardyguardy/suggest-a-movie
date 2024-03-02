@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import movies from "./Movies.json";
 import Movie from "./Components/Movie";
+import DarkModeToggle from "./Components/DarkModeToggle";
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App flex justify-center items-center min-h-screen bg-gray-100">
       <div className="text-center">
+        <DarkModeToggle />
         <h1 class="text-3xl font-bold text-center p-[20px]">
           Pick a random movie based <br /> on Hardy Guardy's taste!
         </h1>
