@@ -53,16 +53,16 @@ function App() {
             max="2020"
             value={selectedYear}
             onChange={(e) => setSelectedYear(parseInt(e.target.value))}
-            className="slider mb-4"
+            className="slider mb-4 mt-[20px]"
           />
-          <p>
+          <p className="text-lg font-bold">
             Year: {selectedYear} - {selectedYear + 9}
           </p>
         </div>
 
         <div className="pb-[30px]">
           <button
-            className="bg-green-500 h-[50px] w-[150px] hover:bg-green-600 text-white rounded-[12px]  "
+            className="bg-green-500 h-[50px] w-[150px] hover:bg-green-600 text-white rounded-[12px] text-[18px] font-bold "
             onClick={pickRandomMovie}
           >
             Pick a movie
