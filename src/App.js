@@ -62,10 +62,10 @@ function App() {
 
         <div className="pb-[30px]">
           <button
-            className="bg-green-500 h-[50px] w-[150px] hover:bg-green-600 text-white rounded-[12px] text-[18px] font-bold "
+            className="bg-blue-500 h-[50px] w-[250px] hover:bg-blue-600 text-white rounded-[12px] text-[18px] font-bold "
             onClick={pickRandomMovie}
           >
-            Pick a movie
+            Pick a random movie
           </button>
         </div>
 
