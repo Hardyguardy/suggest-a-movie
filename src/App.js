@@ -32,7 +32,8 @@ function App() {
       <div className="text-center">
         <DarkModeToggle />
         <h1 class="text-3xl font-bold text-center p-[20px]">
-          Pick a random movie based <br /> on Hardy Guardy's taste!
+          Pick a random movie based <br /> on Hardy Guardy's taste and other
+          friends!
         </h1>
         <p class="text-lg mb-[20px]">Select a genre and year to get started</p>
         <div className="mb-4">
@@ -62,10 +63,10 @@ function App() {
 
         <div className="pb-[30px]">
           <button
-            className="bg-blue-500 h-[50px] w-[250px] hover:bg-blue-600 text-white rounded-[12px] text-[18px] font-bold "
+            className="bg-blue-400 h-[50px] w-[250px] hover:bg-blue-600 text-white rounded-[12px] text-[18px] font-bold "
             onClick={pickRandomMovie}
           >
-            Pick a random movie
+            Pick a random movie again
           </button>
         </div>
 
