@@ -36,6 +36,9 @@ function App() {
           friends!
         </h1>
         <p class="text-lg mb-[20px]">Select a genre and year to get started</p>
+        <p class="text-lg mb-[30px]">
+          Watch a perfect movie based on your picks!
+        </p>
         <div className="mb-4">
           <select
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
